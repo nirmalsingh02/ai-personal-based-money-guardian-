@@ -1,0 +1,19 @@
+/* DailyNeeds.css */
+.dailyneeds-container {
+  padding: 0;
+}
+
+.dailyneeds-filter-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tx-row {
+  transition: all 0.2s ease;
+}
+
+.tx-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(2px);
+}

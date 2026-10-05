@@ -1,0 +1,118 @@
+.onboarding-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.onboarding-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.onboarding-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.onboarding-logo {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, rgba(37,99,235,0.3), rgba(139,92,246,0.3));
+  border: 1px solid rgba(96,165,250,0.3);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.onboarding-step {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.step-icon-big {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(139,92,246,0.2));
+  border: 1px solid rgba(96,165,250,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4px;
+  font-size: 2rem;
+}
+
+.onboarding-step h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.step-desc {
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.freq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.freq-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+}
+
+.freq-btn:hover {
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+.freq-btn.active {
+  background: linear-gradient(135deg, rgba(37,99,235,0.3), rgba(139,92,246,0.2));
+  border-color: rgba(96,165,250,0.5);
+  color: white;
+  box-shadow: 0 0 15px rgba(96,165,250,0.2);
+}
